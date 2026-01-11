@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Roofing Tips | Expert Roof Advice</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+
+        nav {
+            background: #1e293b;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .article-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .article-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        }
+
+        .article-content {
+            padding: 1.5rem;
+        }
+
+        .article-category {
+            display: inline-block;
+            background: #3b82f6;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .article-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+            color: #1e293b;
+        }
+
+        .article-date {
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        .categories {
+            background: #f8fafc;
+            padding: 2rem;
+            margin-top: 3rem;
+            border-radius: 8px;
+        }
+
+        .categories h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: #1e293b;
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .category-item {
+            background: white;
+            padding: 1rem;
+            border-radius: 6px;
+            text-align: center;
+            border: 2px solid #e2e8f0;
+            transition: border-color 0.3s;
+            cursor: pointer;
+        }
+
+        .category-item:hover {
+            border-color: #3b82f6;
+        }
+
+        /* ===== Other Resources Section ===== */
+        .resources {
+            background: #f8fafc;
+            padding: 2rem;
+            margin-top: 3rem;
+            border-radius: 8px;
+        }
+
+        .resources h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: #1e293b;
+        }
+
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.25rem;
+        }
+
+        .resource-box {
+            background: white;
+            padding: 1.25rem;
+            border-radius: 8px;
+            border: 2px solid #e2e8f0;
+        }
+
+        .resource-box h3 {
+            font-size: 1.1rem;
+            color: #1e293b;
+            margin-bottom: 0.75rem;
+        }
+
+        .resource-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .resource-list li {
+            margin: 0.45rem 0;
+            word-break: break-word;
+        }
+
+        .resource-list a {
+            color: #1e3a8a;
+            text-decoration: none;
+        }
+
+        .resource-list a:hover {
+            color: #2563eb;
+            text-decoration: underline;
+        }
+
+        footer {
+            background: #1e293b;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            background: #334155;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        .social-links a:hover {
+            background: #3b82f6;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav {
+                gap: 1rem;
+            }
+
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pro Roofing Tips</h1>
+        <p>Expert Roof Maintenance & Repair Advice</p>
+    </header>
+
+    <nav>
+        <a href="https://proroofingtips.com/">Home</a>
+        <a href="https://proroofingtips.com/category/roofing-maintenance/">Maintenance</a>
+        <a href="https://proroofingtips.com/category/roof-repair/">Repair</a>
+        <a href="https://proroofingtips.com/category/roof-replacement/">Replacement</a>
+        <a href="https://proroofingtips.com/category/siding/">Siding</a>
+        <a href="https://proroofingtips.com/category/shingles-material/">Materials</a>
+    </nav>
+
+    <div class="container">
+        <h2>Latest Articles</h2>
+
+        <div class="articles-grid">
+            <div class="article-card">
+                <div class="article-content">
+                    <span class="article-category">Residential Roofing</span>
+                    <h3>Rafter Span Chart Explained</h3>
+                    <p class="article-date">December 24, 2025</p>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <div class="article-content">
+                    <span class="article-category">Roof Inspection</span>
+                    <h3>Flat Roof Leak Repair Guide</h3>
+                    <p class="article-date">December 24, 2025</p>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <div class="article-content">
+                    <span class="article-category">Materials</span>
+                    <h3>How Much Does a Square of Shingles Weigh</h3>
+                    <p class="article-date">December 22, 2025</p>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <div class="article-content">
+                    <span class="article-category">Maintenance</span>
+                    <h3>Metal Roof Maintenance Guide</h3>
+                    <p class="article-date">September 23, 2025</p>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <div class="article-content">
+                    <span class="article-category">Siding</span>
+                    <h3>How Long Does Vinyl Siding Last?</h3>
+                    <p class="article-date">September 23, 2025</p>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <div class="article-content">
+                    <span class="article-category">Common Issues</span>
+                    <h3>Weather Impact on Your Roof</h3>
+                    <p class="article-date">September 19, 2025</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="categories">
+            <h2>Popular Categories</h2>
+            <div class="category-grid">
+                <div class="category-item">Roof Repair</div>
+                <div class="category-item">Maintenance</div>
+                <div class="category-item">Replacement</div>
+                <div class="category-item">Storm Damage</div>
+                <div class="category-item">Siding</div>
+                <div class="category-item">Materials</div>
+                <div class="category-item">Insurance</div>
+                <div class="category-item">Inspection</div>
+            </div>
+        </div>
+
+        <!-- ===== Other Resources (All Clickable Links) ===== -->
+        <div class="resources">
+            <h2>Other Resources</h2>
+
+            <div class="resource-grid">
+                <div class="resource-box">
+                    <h3>Social Profiles & Communities</h3>
+                    <ul class="resource-list">
+                        <li><a href="https://www.pinterest.com/Proroofingtips007/" target="_blank" rel="noopener noreferrer">https://www.pinterest.com/Proroofingtips007/</a></li>
+                        <li><a href="https://www.tiktok.com/@proroofingtips?lang=en" target="_blank" rel="noopener noreferrer">https://www.tiktok.com/@proroofingtips?lang=en</a></li>
+                        <li><a href="https://www.snapchat.com/add/proroofingtips" target="_blank" rel="noopener noreferrer">https://www.snapchat.com/add/proroofingtips</a></li>
+                        <li><a href="https://discord.com/channels/1443167144975274080/1443167145910468712" target="_blank" rel="noopener noreferrer">https://discord.com/channels/1443167144975274080/1443167145910468712</a></li>
+                        <li><a href="https://www.twitch.tv/proroofingtips" target="_blank" rel="noopener noreferrer">https://www.twitch.tv/proroofingtips</a></li>
+                        <li><a href="https://myspace.com/proroofingtips" target="_blank" rel="noopener noreferrer">https://myspace.com/proroofingtips</a></li>
+                        <li><a href="https://mewe.com/proroofing_tips" target="_blank" rel="noopener noreferrer">https://mewe.com/proroofing_tips</a></li>
+                        <li><a href="https://rumble.com/user/Proroofingtips" target="_blank" rel="noopener noreferrer">https://rumble.com/user/Proroofingtips</a></li>
+                        <li><a href="https://500px.com/p/rabby99creatives" target="_blank" rel="noopener noreferrer">https://500px.com/p/rabby99creatives</a></li>
+                        <li><a href="https://www.flickr.com/people/proroofingtipscom/" target="_blank" rel="noopener noreferrer">https://www.flickr.com/people/proroofingtipscom/</a></li>
+                    </ul>
+                </div>
+
+                <div class="resource-box">
+                    <h3>Blogs & Publications</h3>
+                    <ul class="resource-list">
+                        <li><a href="https://blog.ameba.jp/ucs/top.do" target="_blank" rel="noopener noreferrer">https://blog.ameba.jp/ucs/top.do</a></li>
+                        <li><a href="https://proroofingtips.wordpress.com/2025/12/03/wood-roof-structure-your-complete-engineering-guide/" target="_blank" rel="noopener noreferrer">https://proroofingtips.wordpress.com/2025/12/03/wood-roof-structure-your-complete-engineering-guide/</a></li>
+                        <li><a href="https://medium.com/@rabby99creatives/metal-roof-maintenance-guide-for-homeowners-206638454362?postPublishedType=initial" target="_blank" rel="noopener noreferrer">https://medium.com/@rabby99creatives/metal-roof-maintenance-guide-for-homeowners-206638454362?postPublishedType=initial</a></li>
+                        <li><a href="https://differ.blog/p/top-10-roofing-issues-every-homeowner-07ae64" target="_blank" rel="noopener noreferrer">https://differ.blog/p/top-10-roofing-issues-every-homeowner-07ae64</a></li>
+                        <li><a href="https://www.tumblr.com/proroofingtips2025/801891877259460608/how-long-does-vinyl-siding-last" target="_blank" rel="noopener noreferrer">https://www.tumblr.com/proroofingtips2025/801891877259460608/how-long-does-vinyl-siding-last</a></li>
+                    </ul>
+                </div>
+
+                <div class="resource-box">
+                    <h3>Stories, Mentions & Bookmark Pages</h3>
+                    <ul class="resource-list">
+                        <li><a href="https://ztndz.com/story26314447/the-leak-that-changed-everything-how-one-homeowner-saved-their-roof-just-in-time" target="_blank" rel="noopener noreferrer">https://ztndz.com/story26314447/the-leak-that-changed-everything-how-one-homeowner-saved-their-roof-just-in-time</a></li>
+                        <li><a href="https://bookmark-template.com/story26556557/a-homeowner-ignored-minor-roof-issues-for-years-until-a-sudden-leak-exposed-widespread-damage-a-full-roof-replacement-saved-the-house-from-structural-failure" target="_blank" rel="noopener noreferrer">https://bookmark-template.com/story26556557/a-homeowner-ignored-minor-roof-issues-for-years-until-a-sudden-leak-exposed-widespread-damage-a-full-roof-replacement-saved-the-house-from-structural-failure</a></li>
+                        <li><a href="https://opensocialfactory.com/story23774750/a-home-on-the-brink-the-hidden-roof-problem-no-one-saw-coming" target="_blank" rel="noopener noreferrer">https://opensocialfactory.com/story23774750/a-home-on-the-brink-the-hidden-roof-problem-no-one-saw-coming</a></li>
+                        <li><a href="https://bookmarkport.com/story23318796/a-home-on-the-brink-the-hidden-roof-problem-no-one-saw-coming" target="_blank" rel="noopener noreferrer">https://bookmarkport.com/story23318796/a-home-on-the-brink-the-hidden-roof-problem-no-one-saw-coming</a></li>
+                        <li><a href="https://gorillasocialwork.com/story24875420/the-mystery-stain-a-roof-problem-that-told-its-own-story" target="_blank" rel="noopener noreferrer">https://gorillasocialwork.com/story24875420/the-mystery-stain-a-roof-problem-that-told-its-own-story</a></li>
+                        <li><a href="https://prbookmarkingwebsites.com/story26385572/the-leak-that-changed-everything-how-one-homeowner-saved-their-roof-just-in-time" target="_blank" rel="noopener noreferrer">https://prbookmarkingwebsites.com/story26385572/the-leak-that-changed-everything-how-one-homeowner-saved-their-roof-just-in-time</a></li>
+                        <li><a href="https://bookmarkloves.com/story23011171/from-storm-damage-to-stronger-shelter-a-roof-s-journey-to-recovery" target="_blank" rel="noopener noreferrer">https://bookmarkloves.com/story23011171/from-storm-damage-to-stronger-shelter-a-roof-s-journey-to-recovery</a></li>
+                        <li><a href="https://bookmarkbirth.com/story21161426/the-mystery-stain-a-roof-problem-that-told-its-own-story" target="_blank" rel="noopener noreferrer">https://bookmarkbirth.com/story21161426/the-mystery-stain-a-roof-problem-that-told-its-own-story</a></li>
+
+                        <li><a href="https://proroofingtips.aboutyoublog.com/47138769/metal-roof-maintenance-guide-essential-tips-for-2025" target="_blank" rel="noopener noreferrer">https://proroofingtips.aboutyoublog.com/47138769/metal-roof-maintenance-guide-essential-tips-for-2025</a></li>
+                        <li><a href="https://proroofingtips.izrablog.com/39068776/the-ultimate-2025-metal-roof-care-handbook-tips-every-homeowner-should-know" target="_blank" rel="noopener noreferrer">https://proroofingtips.izrablog.com/39068776/the-ultimate-2025-metal-roof-care-handbook-tips-every-homeowner-should-know</a></li>
+                        <li><a href="https://abusayed.designertoblog.com/69797939/2025-essential-metal-roofing-maintenance-tips-every-homeowner-should-follow" target="_blank" rel="noopener noreferrer">https://abusayed.designertoblog.com/69797939/2025-essential-metal-roofing-maintenance-tips-every-homeowner-should-follow</a></li>
+                        <li><a href="https://proroofingtips.estate-blog.com/37568820/smart-metal-roof-maintenance-tips-you-need-to-know-for-2025" target="_blank" rel="noopener noreferrer">https://proroofingtips.estate-blog.com/37568820/smart-metal-roof-maintenance-tips-you-need-to-know-for-2025</a></li>
+
+                        <li><a href="https://bookmarkswing.com/story22348984/shingles-in-the-wind-a-real-story-of-roof-survival-after-a-storm" target="_blank" rel="noopener noreferrer">https://bookmarkswing.com/story22348984/shingles-in-the-wind-a-real-story-of-roof-survival-after-a-storm</a></li>
+                        <li><a href="https://bookmarkextent.com/story22675902/shingles-in-the-wind-a-real-story-of-roof-survival-after-a-storm" target="_blank" rel="noopener noreferrer">https://bookmarkextent.com/story22675902/shingles-in-the-wind-a-real-story-of-roof-survival-after-a-storm</a></li>
+                        <li><a href="https://bookmarkja.com/story23343620/shingles-in-the-wind-a-real-story-of-roof-survival-after-a-storm" target="_blank" rel="noopener noreferrer">https://bookmarkja.com/story23343620/shingles-in-the-wind-a-real-story-of-roof-survival-after-a-storm</a></li>
+                    </ul>
+                </div>
+
+                <div class="resource-box">
+                    <h3>Directories</h3>
+                    <ul class="resource-list">
+                        <li><a href="https://www.addgoodsites.com/details.php?id=690624" target="_blank" rel="noopener noreferrer">https://www.addgoodsites.com/details.php?id=690624</a></li>
+                        <li><a href="https://www.alive-directory.com/Roofing-Issues-Every-Homeowner-in-the-USA-Should-Know_711751.html" target="_blank" rel="noopener noreferrer">https://www.alive-directory.com/Roofing-Issues-Every-Homeowner-in-the-USA-Should-Know_711751.html</a></li>
+                        <li><a href="https://activdirectory.net/listing/roof-leaks-%E2%80%93-the-most-common-problem-1213403" target="_blank" rel="noopener noreferrer">https://activdirectory.net/listing/roof-leaks-%E2%80%93-the-most-common-problem-1213403</a></li>
+                        <li><a href="https://www.bedirectory.com/Metal-Roof-Maintenance-Guide_432382.html" target="_blank" rel="noopener noreferrer">https://www.bedirectory.com/Metal-Roof-Maintenance-Guide_432382.html</a></li>
+                        <li><a href="https://www.ask-directory.com/Metal-Roof-Maintenance-Guide_454108.html" target="_blank" rel="noopener noreferrer">https://www.ask-directory.com/Metal-Roof-Maintenance-Guide_454108.html</a></li>
+                        <li><a href="https://www.craigslistdirectory.net/Metal-Roof-Maintenance-Guide_442583.html" target="_blank" rel="noopener noreferrer">https://www.craigslistdirectory.net/Metal-Roof-Maintenance-Guide_442583.html</a></li>
+                        <li><a href="https://www.interesting-dir.com/details.php?id=429045" target="_blank" rel="noopener noreferrer">https://www.interesting-dir.com/details.php?id=429045</a></li>
+                        <li><a href="https://ebay-dir.com/listing/guide-to-wood-roof-structures-406910" target="_blank" rel="noopener noreferrer">https://ebay-dir.com/listing/guide-to-wood-roof-structures-406910</a></li>
+                        <li><a href="https://www.bestbuydir.com/How-Much-Does-It-Cost-to-Replace-Vinyl-Siding-in-2025?_440716.html" target="_blank" rel="noopener noreferrer">https://www.bestbuydir.com/How-Much-Does-It-Cost-to-Replace-Vinyl-Siding-in-2025?_440716.html</a></li>
+                        <li><a href="https://www.familydir.com/How-Much-Does-It-Cost-to-Replace-Vinyl-Siding-in-2025?_511560.html" target="_blank" rel="noopener noreferrer">https://www.familydir.com/How-Much-Does-It-Cost-to-Replace-Vinyl-Siding-in-2025?_511560.html</a></li>
+                        <li><a href="https://bookmarksknot.com/story22658261/how-much-does-it-cost-to-replace-vinyl-siding-in-2025" target="_blank" rel="noopener noreferrer">https://bookmarksknot.com/story22658261/how-much-does-it-cost-to-replace-vinyl-siding-in-2025</a></li>
+                        <li><a href="https://thefairlist.com/story10883254/how-long-does-vinyl-siding-last" target="_blank" rel="noopener noreferrer">https://thefairlist.com/story10883254/how-long-does-vinyl-siding-last</a></li>
+                        <li><a href="https://sound-social.com/story10940285/how-long-does-vinyl-siding-last" target="_blank" rel="noopener noreferrer">https://sound-social.com/story10940285/how-long-does-vinyl-siding-last</a></li>
+                        <li><a href="https://icelisting.com/story21918832/metal-roof-maintenance-guide-essential-tips-for-2025" target="_blank" rel="noopener noreferrer">https://icelisting.com/story21918832/metal-roof-maintenance-guide-essential-tips-for-2025</a></li>
+                        <li><a href="https://socialdosa.com/story10655071/metal-roof-maintenance-guide" target="_blank" rel="noopener noreferrer">https://socialdosa.com/story10655071/metal-roof-maintenance-guide</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p><strong>Pro Roofing Tips</strong></p>
+        <p>Your go-to resource for expert roofing advice</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/proroofingtips">Facebook</a>
+            <a href="https://x.com/proroofingtips">Twitter</a>
+            <a href="https://www.instagram.com/pro_roofing_tips/">Instagram</a>
+            <a href="https://www.linkedin.com/company/pro-roofing-tips/">LinkedIn</a>
+        </div>
+        <p style="margin-top: 1.5rem; font-size: 0.9rem;">© 2026 Pro Roofing Tips. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
